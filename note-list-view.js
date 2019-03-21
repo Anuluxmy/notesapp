@@ -5,17 +5,12 @@
   }
 
   NoteListView.prototype.view = function() {
-    let htmlString = "<ul>";
+     let htmlString = "<ul>";
 
     this.noteList.notes.forEach(function(note) {
-
-// document.write(htmlString += "<li><div>" + note.returntext() + "</div></li>");
-      // document.write(note.returntext());
-      document.write(htmlString +="<div><li>"+ note.returntext() + "</li></div>")
+      document.write("<div><li>"+ note.returntext() + "</li></div>")
       // console.log(note.returntext());
     })
-      htmlString += "</ul>"
-
     return htmlString
 };
 
